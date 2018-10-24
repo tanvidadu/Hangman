@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg886"
+   inkscape:version="0.92.3 (unknown)"
+   sodipodi:docname="6.svg">
+  <defs
+     id="defs880" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.20525092"
+     inkscape:cx="-188.26592"
+     inkscape:cy="788.90071"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata883">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#f7f7f7;stroke-width:4.11942053;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 34.647616,62.307334 C 62.531328,122.75243 33.09714,152.96278 32.309482,198.28395 90.815261,176.44553 134.07734,198.83224 184.28824,201.05898 179.03991,160.95543 147.06638,163.14391 180.78103,61.382322 124.90711,73.025602 74.954691,75.29824 34.647616,62.307334 Z"
+       id="path1525"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1527"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#f7f7f7;stroke-opacity:1;"
+       transform="scale(0.26458333)"><flowRegion
+         id="flowRegion1529"
+         style="stroke:#f7f7f7;stroke-opacity:1;"><rect
+           id="rect1531"
+           width="32.926044"
+           height="44.685349"
+           x="329.26044"
+           y="449.88763"
+           style="stroke:#f7f7f7;stroke-opacity:1;" /></flowRegion><flowPara
+         id="flowPara1533">12q12</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1535"
+       style="font-style:normal;font-weight:normal;font-size:192.00000242px;line-height:1.25;font-family:Mali;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#f7f7f7;-inkscape-font-specification:Mali;font-stretch:normal;font-variant:normal;stroke-opacity:1;"
+       transform="scale(0.26458333)"><flowRegion
+         id="flowRegion1537"
+         style="-inkscape-font-specification:Mali;font-family:Mali;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:192.00000242px;stroke:#f7f7f7;stroke-opacity:1;"><rect
+           id="rect1539"
+           width="190.50069"
+           height="138.75977"
+           x="258.70465"
+           y="438.12833"
+           style="-inkscape-font-specification:Mali;font-family:Mali;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:192.00000242px;stroke:#f7f7f7;stroke-opacity:1;" /></flowRegion><flowPara
+         id="flowPara1541">1</flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:134.161026px;line-height:1.25;font-family:Mali;-inkscape-font-specification:Mali;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#fefefe;stroke-opacity:1;"
+       x="68.733261"
+       y="177.86208"
+       id="text1580"><tspan
+         sodipodi:role="line"
+         id="tspan1578"
+         x="68.733261"
+         y="177.86208"
+         style="stroke:#fafafa;stroke-opacity:1;fill:#ffffff">6</tspan></text>
+  </g>
+</svg>
