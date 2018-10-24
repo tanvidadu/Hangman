@@ -20,11 +20,12 @@ path {
 }
 
 .fillBox {
+  border-color: #ffffff;
   border-style: solid;
   border-top: none;
   border-right: none;
   border-left: none;
-  margin-right: 3px;
+  margin-right: 5px;
   height: 20vh;
   width: 20vh;
 }
