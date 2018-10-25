@@ -2,12 +2,15 @@ window.onload = () => {
   const hangmanMainContent = document.getElementById("hangmanMainContent");
   const proceedBtn = document.getElementById("proceedBtn");
   const restartBtn = document.getElementById("restart");
+  $('#statusDisplay').hide();
 
   restartBtn.addEventListener("click", () => {
     hangmanMainContent.style.display = "inherit";
     const gamePlayStart = document.getElementById("gamePlayStart");
     gamePlayStart.style.display = "none";
     restartBtn.style.display = "none";
+    $('#statusDisplay').hide();
+
   });
 
   setTimeout(() => {
@@ -28,6 +31,7 @@ window.onload = () => {
 
   proceedBtn.addEventListener("click", () => {
     $.post('/guessWord', { word: $('#wordEnter').val() }, (data) => {
+      $('#statusDisplay').show();
       startGame($('#wordEnter').val().length, $('#wordEnter').val(), data);
     });
   });

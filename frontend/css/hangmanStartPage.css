@@ -101,11 +101,11 @@ img.options:hover {
 
 .statusBoxes {
   text-align: center;
-  line-height: 5vw;
+  line-height: 17vw;
   color: white;
-  height: 10vh;
-  width: 10vw;
-  font-size: 5vw;
+  height: 20vw;
+  width: 20vw;
+  font-size: 10vw;
   font-family: "Mali", cursive;
 }
 
@@ -115,10 +115,12 @@ img.options:hover {
 
 .colorGreen {
   color: green;
+  display: none;
 }
 
 .colorRed {
   color: red;
+  display: none;
 }
 
 #question {
@@ -138,6 +140,7 @@ img.options:hover {
   width: 95vw;
   margin-left: 2.5vw;
   margin-right: 2.5vw;
+  margin-top: 25vh;
 }
 
 #restart {
