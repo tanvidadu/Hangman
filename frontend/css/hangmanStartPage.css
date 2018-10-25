@@ -26,6 +26,9 @@ path {
   border-right: none;
   border-left: none;
   margin-right: 5px;
+  font-family: "Mali", cursive;
+  font-size: 15vh;
+  text-align: center;
   height: 20vh;
   width: 20vh;
 }

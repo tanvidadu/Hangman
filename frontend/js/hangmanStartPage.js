@@ -13,7 +13,7 @@ window.onload = () => {
   countOptions.forEach((elem, i) => {
     elem.addEventListener("click", () => {
       console.log(`option ${options[i]} clicked`);
-      startGame(options[i], dummyWords[i]);
+      startGame(options[i], "yummy");
     })
   });
 
@@ -22,8 +22,23 @@ window.onload = () => {
     gamePlayStart.innerHTML = "";
     for(let i=0; i<count; i++) {
       const divElement = document.createElement("div");
+      divElement.innerHTML = `<div class="letters">${destinedWord[i]}</div>`
+      divElement.style.color = "#000000";
       divElement.classList.add("fillBox");
       gamePlayStart.appendChild(divElement);
     }
+    const guessess = ["u", "m", "y"];
+    const letters = Array.from(document.getElementsByClassName("letters"));
+    guessess.forEach((letter, i) => {
+      letters.forEach((l) => {
+        if(l.innerText == letter) {
+          setTimeout(() => {
+            l.style.color = "#ffffff";
+            l.classList.add("animated");
+            l.classList.add("bounceInDown");
+          }, i * 1000);
+        }
+      });
+    });
   }
 }
