@@ -1,0 +1,23 @@
+{
+  "name": "hangman",
+  "version": "1.0.0",
+  "description": "add the dictionary -shm for humble I am getting 17 tries, the strategy used is to consecutively call bigram model in accordance with the new letter guessed  we need to work on reducing the no of tries",
+  "main": "node_server.js",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanvidadu/Hangman.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tanvidadu/Hangman/issues"
+  },
+  "homepage": "https://github.com/tanvidadu/Hangman#readme"
+}
