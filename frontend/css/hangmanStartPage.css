@@ -49,10 +49,10 @@ path {
   border-left: none;
   margin-right: 5px;
   font-family: "Mali", cursive;
-  font-size: 15vh;
+  font-size: 5vh;
   text-align: center;
-  height: 20vh;
-  width: 20vh;
+  height: 10vh;
+  width: 10vw;
 }
 
 #proceedBtn {

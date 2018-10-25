@@ -1,5 +1,6 @@
 window.onload = () => {
   const hangmanMainContent = document.getElementById("hangmanMainContent");
+  const proceedBtn = document.getElementById("proceedBtn");
   const restartBtn = document.getElementById("restart");
 
   restartBtn.addEventListener("click", () => {
@@ -25,7 +26,14 @@ window.onload = () => {
     })
   });
 
-  const startGame = (count, destinedWord) => {
+  proceedBtn.addEventListener("click", () => {
+    $.post('/guessWord', { word: $('#wordEnter').val() }, (data) => {
+      startGame($('#wordEnter').val().length, $('#wordEnter').val(), data);
+    });
+  });
+
+  const startGame = (count, destinedWord, dataSet) => {
+    console.log(count, destinedWord, dataSet);
     hangmanMainContent.style.display = "none";
     const gamePlayStart = document.getElementById("gamePlayStart");
     gamePlayStart.style.display = "flex";
@@ -38,7 +46,7 @@ window.onload = () => {
       divElement.classList.add("fillBox");
       gamePlayStart.appendChild(divElement);
     }
-    const guessess = ["u", "m", "y"];
+    const guessess = dataSet;
     const letters = Array.from(document.getElementsByClassName("letters"));
     guessess.forEach((letter, i) => {
       letters.forEach((l) => {

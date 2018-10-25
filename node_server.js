@@ -24,7 +24,7 @@ app.post('/guessWord', (req, res) => {
   let requiredData = null;
 
   if(stderr) {
-    console.log(sterr);
+    console.log(stderr);
   } else {
     requiredData = stdout.split('\n');
     requiredData = requiredData[requiredData.length - 4];
