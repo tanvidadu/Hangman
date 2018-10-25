@@ -101,10 +101,10 @@ img.options:hover {
 
 .statusBoxes {
   text-align: center;
-  line-height: 17vw;
+  line-height: 13vw;
   color: white;
-  height: 20vw;
-  width: 20vw;
+  height: 15vw;
+  width: 15vw;
   font-size: 10vw;
   font-family: "Mali", cursive;
 }

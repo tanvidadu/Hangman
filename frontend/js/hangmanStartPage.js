@@ -52,16 +52,33 @@ window.onload = () => {
     }
     const guessess = dataSet;
     const letters = Array.from(document.getElementsByClassName("letters"));
-    guessess.forEach((letter, i) => {
-      letters.forEach((l) => {
-        if(l.innerText === letter) {
-          setTimeout(() => {
-            l.style.color = "#ffffff";
-            l.classList.add("animated");
-            l.classList.add("bounceInDown");
-          }, i * 1000);
+
+    let dict = {};
+    letters.forEach((letter, i) => {
+      if(dict[letter.innerText]) {
+        dict[letter.innerText].pos.push(i);
+      } else {
+        dict[letter.innerText] = { present: true, pos: [i]};
+      }
+    });
+
+    guessess.forEach((l, i) => {
+      setTimeout(() => {
+        $("#currentLetter").text(l);
+        if(dict[l] && dict[l].present) {
+          $(".colorGreen")[0].style.display = 'block';
+          $(".colorRed")[0].style.display = 'none';
+          console.log(`positions of ${l} are ${dict[l].pos}`);
+          dict[l].pos.forEach((p) => {
+            letters[p].style.color = "#ffffff";
+            letters[p].classList.add("animated");
+            letters[p].classList.add("bounceInDown");
+          });
+        } else {
+          $(".colorGreen")[0].style.display = 'none';
+          $(".colorRed")[0].style.display = 'block';
         }
-      });
+      }, i * 1000);
     });
   }
 }
