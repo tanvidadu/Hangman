@@ -10,7 +10,7 @@ window.onload = () => {
     gamePlayStart.style.display = "none";
     restartBtn.style.display = "none";
     $('#statusDisplay').hide();
-
+    $('#attempts').hide();
   });
 
   setTimeout(() => {
@@ -32,11 +32,13 @@ window.onload = () => {
   proceedBtn.addEventListener("click", () => {
     $.post('/guessWord', { word: $('#wordEnter').val() }, (data) => {
       $('#statusDisplay').show();
+      $("#currentLetter").show();
       startGame($('#wordEnter').val().length, $('#wordEnter').val(), data);
     });
   });
 
   const startGame = (count, destinedWord, dataSet) => {
+    $('#attempts').show();
     console.log(count, destinedWord, dataSet);
     hangmanMainContent.style.display = "none";
     const gamePlayStart = document.getElementById("gamePlayStart");
@@ -64,6 +66,7 @@ window.onload = () => {
 
     guessess.forEach((l, i) => {
       setTimeout(() => {
+        $('#attempts').text(`attempts: ${i+1}`);
         $("#currentLetter").text(l);
         if(dict[l] && dict[l].present) {
           $(".colorGreen")[0].style.display = 'block';

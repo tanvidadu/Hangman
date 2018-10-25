@@ -1,3 +1,4 @@
+
 import pandas as pd
 import json
 import sys
@@ -97,13 +98,13 @@ def guessLetterHelper(word, guess_word, letter,penalty):
                 right_counter += 1
 
 (guess_word, penalty, last_guessed_letter) = guess_first_letter(word, guess_word, penalty)
-print guess_word
-print guess_word_list
-print penalty
-print last_guessed_letter
+print (guess_word)
+print (guess_word_list)
+print (penalty)
+print (last_guessed_letter)
 while( word != guess_word):
     (guess_word, penalty, last_guessed_letter) = guessLetterHelper(word, guess_word,last_guessed_letter, penalty)
-    print guess_word
-    print guess_word_list
-    print penalty
-    print last_guessed_letter
+    print (guess_word)
+    print (guess_word_list)
+    print (penalty)
+    print (last_guessed_letter)
