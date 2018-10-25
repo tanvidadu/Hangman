@@ -1,5 +1,6 @@
 #svg8 {
-  height: 90vh;
+  margin-left: 5vw;
+    height: 90vh;
   width: 90vw;
 }
 
@@ -8,6 +9,7 @@ body {
 }
 
 #enterWord {
+  margin-top: 5vh;
   text-align: center;
 }
 
@@ -18,7 +20,7 @@ body {
   border-left: none;
   border-right: none;
   border-bottom: dashed;
-  font-size: 5vh;
+  font-size: 3vw;
   font-family: "Mali",cursive;
   text-align: center;
 }
@@ -53,10 +55,23 @@ path {
   width: 20vh;
 }
 
+#proceedBtn {
+  text-align: center;
+  color: white;
+  margin-top: 5vh;
+  font-size: 3vw;
+  font-family: "Mali", cursive;
+}
+
+#proceedBtn:hover {
+  cursor: pointer;
+}
+
 .options {
   width: 20%;
   height: 20%;
   opacity: 0.3;
+  display: none;
 }
 
 img.options:hover {
@@ -82,7 +97,7 @@ img.options:hover {
   color: #ffffff;
   margin-left: auto;
   margin-right: auto;
-  font-size: 2vw;
+  font-size: 3vw;
   font-family: 'Mali', cursive;
   display: inline-block;
   margin-top: 3%;
@@ -99,7 +114,7 @@ img.options:hover {
 
 #restart {
   margin-top: 15vh;
-  font-size: 5vh;
+  font-size: 4vw;
   text-align: center;
   display: none;
 }
