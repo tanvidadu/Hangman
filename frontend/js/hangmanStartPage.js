@@ -78,7 +78,7 @@ window.onload = () => {
           $(".colorGreen")[0].style.display = 'none';
           $(".colorRed")[0].style.display = 'block';
         }
-      }, i * 1000);
+      }, i * 500);
     });
   }
 }
