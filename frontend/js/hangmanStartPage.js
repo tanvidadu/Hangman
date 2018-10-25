@@ -1,5 +1,13 @@
 window.onload = () => {
   const hangmanMainContent = document.getElementById("hangmanMainContent");
+  const restartBtn = document.getElementById("restart");
+
+  restartBtn.addEventListener("click", () => {
+    hangmanMainContent.style.display = "inherit";
+    const gamePlayStart = document.getElementById("gamePlayStart");
+    gamePlayStart.style.display = "none";
+    restartBtn.style.display = "none";
+  });
 
   setTimeout(() => {
     const hangmanPreloader = document.getElementById("hangmanPreloader");
@@ -18,7 +26,10 @@ window.onload = () => {
   });
 
   const startGame = (count, destinedWord) => {
-    const gamePlayStart = document.getElementById("gamePlayStart")
+    hangmanMainContent.style.display = "none";
+    const gamePlayStart = document.getElementById("gamePlayStart");
+    gamePlayStart.style.display = "flex";
+    restartBtn.style.display = "inherit";
     gamePlayStart.innerHTML = "";
     for(let i=0; i<count; i++) {
       const divElement = document.createElement("div");
@@ -31,7 +42,7 @@ window.onload = () => {
     const letters = Array.from(document.getElementsByClassName("letters"));
     guessess.forEach((letter, i) => {
       letters.forEach((l) => {
-        if(l.innerText == letter) {
+        if(l.innerText === letter) {
           setTimeout(() => {
             l.style.color = "#ffffff";
             l.classList.add("animated");

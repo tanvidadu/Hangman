@@ -36,7 +36,7 @@ path {
 .options {
   width: 20%;
   height: 20%;
-  opacity: 0.1;
+  opacity: 0.3;
 }
 
 img.options:hover {
@@ -75,4 +75,15 @@ img.options:hover {
   width: 95vw;
   margin-left: 2.5vw;
   margin-right: 2.5vw;
+}
+
+#restart {
+  margin-top: 15vh;
+  font-size: 5vh;
+  text-align: center;
+  display: none;
+}
+
+#restart:hover {
+  cursor: pointer;
 }
