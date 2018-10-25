@@ -93,6 +93,34 @@ img.options:hover {
   justify-content: center;
 }
 
+#statusDisplay {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+.statusBoxes {
+  text-align: center;
+  line-height: 5vw;
+  color: white;
+  height: 10vh;
+  width: 10vw;
+  font-size: 5vw;
+  font-family: "Mali", cursive;
+}
+
+.boxEnclose {
+  border: 3px solid;
+}
+
+.colorGreen {
+  color: green;
+}
+
+.colorRed {
+  color: red;
+}
+
 #question {
   color: #ffffff;
   margin-left: auto;
