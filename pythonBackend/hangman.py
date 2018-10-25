@@ -1,12 +1,13 @@
 import pandas as pd
 import json
+import sys
 from pprint import pprint
 
 unigramData = pd.read_csv('unigramLetterData.csv')
 
 bigramData = None
 
-with open('../bigramFiles/bigrams.json') as json_data:
+with open('bigramFiles/bigrams.json') as json_data:
     d = json.load(json_data)
     bigramData = pd.DataFrame.from_dict(d)
 bigramData.head()
@@ -17,6 +18,7 @@ bigramData['Percentage'] = (bigramData['Percentage']/float(total_freq))*100
 bigramData.head()
 
 word = raw_input()
+print(word)
 guess_word_list = []
 last_guessed_letter = '*'
 penalty = 0

@@ -4,11 +4,13 @@
   "description": "add the dictionary -shm for humble I am getting 17 tries, the strategy used is to consecutively call bigram model in accordance with the new letter guessed  we need to work on reducing the no of tries",
   "main": "node_server.js",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.4"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node node_server.js"
   },
   "repository": {
     "type": "git",
