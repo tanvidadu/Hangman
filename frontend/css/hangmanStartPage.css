@@ -7,9 +7,29 @@ body {
   background: black;
 }
 
+#enterWord {
+  text-align: center;
+}
+
+#wordEnter {
+  color: white;
+  background: black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: dashed;
+  font-size: 5vh;
+  font-family: "Mali",cursive;
+  text-align: center;
+}
+
+#wordEnter:focus {
+  outline-width: 0;
+}
+
 path {
-  stroke-dasharray: 300;
-  stroke-dashoffset: 300;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
   animation: dash 2s linear forwards;
 }
 
