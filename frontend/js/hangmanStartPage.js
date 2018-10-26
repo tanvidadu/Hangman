@@ -66,9 +66,10 @@ window.onload = () => {
       }
     });
 
+    let wrongAttempts = 0;
+
     guessess.forEach((l, i) => {
       setTimeout(() => {
-        $('#attempts').text(`attempts: ${i+1}`);
         $("#currentLetter").text(l);
         if(dict[l] && dict[l].present) {
           $(".colorGreen")[0].style.display = 'block';
@@ -80,6 +81,7 @@ window.onload = () => {
             letters[p].classList.add("bounceInDown");
           });
         } else {
+          $('#attempts').text(`wrong attempts: ${++wrongAttempts}`);
           $(".colorGreen")[0].style.display = 'none';
           $(".colorRed")[0].style.display = 'block';
         }
