@@ -30,10 +30,10 @@ window.onload = () => {
   });
 
   proceedBtn.addEventListener("click", () => {
-    $.post('/guessWord', { word: $('#wordEnter').val() }, (data) => {
+    $.post('/guessWord', { word: $('#wordEnter').val().trim().toLowerCase() }, (data) => {
       $('#statusDisplay').show();
       $("#currentLetter").show();
-      startGame($('#wordEnter').val().length, $('#wordEnter').val(), data);
+      startGame($('#wordEnter').val().trim().toLowerCase().length, $('#wordEnter').val().trim().toLowerCase(), data);
     });
   });
 
@@ -81,7 +81,7 @@ window.onload = () => {
           $(".colorGreen")[0].style.display = 'none';
           $(".colorRed")[0].style.display = 'block';
         }
-      }, i * 500);
+      }, i * 700);
     });
   }
 }
