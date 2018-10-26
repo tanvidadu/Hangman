@@ -30,6 +30,7 @@ window.onload = () => {
   });
 
   proceedBtn.addEventListener("click", () => {
+    $("#loader").show();
     $.post('/guessWord', { word: $('#wordEnter').val().trim().toLowerCase() }, (data) => {
       $('#statusDisplay').show();
       $("#currentLetter").show();
@@ -38,6 +39,7 @@ window.onload = () => {
   });
 
   const startGame = (count, destinedWord, dataSet) => {
+    $("#loader").hide();
     $('#attempts').show();
     console.log(count, destinedWord, dataSet);
     hangmanMainContent.style.display = "none";

@@ -143,6 +143,15 @@ img.options:hover {
   font-family: "Mali",cursive;
 }
 
+#loader {
+  color: #ffffff;
+  font-size: 3vw;
+  font-family: "Mali", cursive;
+  text-align: center;
+  margin-top: 5vh;
+  display: none;
+}
+
 #gamePlayStart {
   display: flex;
   justify-content: center;
