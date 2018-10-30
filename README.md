@@ -3,7 +3,14 @@ Hangman is a classic game in which one player thinks of a word, phrase or senten
 
 We have tried to built a bot which plays the role of the guessing player. The User gives a word and the bot is responsible for guessing the word in minimum number of tries.
 
+# Try It!
+
+https://hangman-ai.herokuapp.com/
+
 # Demo
 <img src="/gif/demo.gif" />
 
-Created by [@tanvidadu](https://github.com/tanvidadu),[@himanish-star](https://github.com/himanish-star) , [@aggarwalnisha](https://github.com/aggarwalnisha)
+Created by 
+ - [@tanvidadu](https://github.com/tanvidadu) 
+ - [@himanish-star](https://github.com/himanish-star) 
+ - [@aggarwalnisha](https://github.com/aggarwalnisha)
