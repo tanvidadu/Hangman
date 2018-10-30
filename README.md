@@ -8,7 +8,7 @@ We have tried to built a bot which plays the role of the guessing player. The Us
 https://hangman-ai.herokuapp.com/
 
 # Demo
-<img src="/gif/demo.gif" />
+<img src="/gif/ezgif.com-video-to-gif.gif" />
 
 Created by 
  - [@tanvidadu](https://github.com/tanvidadu) 
